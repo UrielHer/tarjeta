@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/funcion.js"></script>
+</head>
+
+<body>
+  <section class="todo">
+    <div class="imaganes">
+      <h3 class="tem">Elige el tema</h3>
+      <label>
+        <nav>
+          <img src="imagenes/cumpleanos2.png" alt="">
+          <input type="radio" name="b" value="a">Cumpleaños
+        </nav>
+      <nav>
+        <img src="imagenes/sanvalentin.png" alt="">
+        <input type="radio" name="b" value="b">San Valentin
+      </nav>
+      <nav>
+        <img src="imagenes/motivacion1.png" alt="">
+        <input type="radio" name="b" value="c">Motivación
+      </nav>
+    </label>
+    </div>
+
+    <div class="datos">
+      <h3 class="tem2">Mensaje</h3>
+      <label>
+      <input type="text" name="" id="titulom" placeholder="Titulo:">
+      <input type="text" name="" id="subtitulom" placeholder="Subtitulo:">
+      <input type="text" name="" id="autorm" placeholder="Autor:">
+      <input type="date" name="" id="fecham" placeholder="Fecha:">
+      <textarea name="" id="mensajem" cols="30" rows="10" placeholder="Mensaje:"></textarea>
+      </label>
+    </div>
+    <div class="colores">
+      <h3>Color de Fondo</h3>
+      <input type="radio" style="display: none ;" name="color" value="a" id="ac">
+      <input type="radio" style="display: none ;" name="color" value="b" id="bc">
+      <input type="radio" style="display: none ;" name="color" value="c" id="cc">
+      <input type="radio" style="display: none ;" name="color" value="d" id="dc">
+      <label class="rojo" for="ac" ></label>
+      <label class="azul" for="bc" ></label>
+      <label class="verde" for="cc" ></label>
+      <label class="amarillo" for="dc" ></label>
+    </div>
+    <input type="button" value="Generar" onclick="generar()"></br>
+  </section>
+</br>
+</br>
+
+  <section style="display: none;" id="carta">    
+    <h4 id="titulo"></h4>
+    <h2 id="subtitulo"></h2>
+    <img src="" alt="" id="img">
+    <p id="mensaje"></p>
+    <h1 class="h1" id="autor"></h1>
+    <h1 id="fecha"></h1>    
+  </section>
+  
+</body>
+</html>
